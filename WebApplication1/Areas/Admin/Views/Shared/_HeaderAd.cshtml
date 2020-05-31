@@ -1,0 +1,47 @@
+﻿<nav class="navbar navbar-expand-lg  navbar-dark orange  lighten-1 fixed-top scrolling-navbar">
+    <div class="container">
+        <a href="#" class="navbar-brand"><i class="fab fa-wikipedia-w"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toogle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <ul class="navbar-nav mr-auto smooth-scroll">
+                <li class="nav-item @if (ViewBag.Title == "Home") {@Html.Raw("active"); }">
+                    <a href="Home" class="nav-link  waves-effect waves-light">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#modalContactForm" class="nav-link waves-effect waves-light" data-toggle="modal" data-target="#modalContactForm">Contact</a>
+                </li>
+                <li class="nav-item @if (ViewBag.Title == "Gallery") {@Html.Raw("active"); }">
+                    <a href="Gallery" class="nav-link waves-effect waves-light">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link waves-effect waves-light">Support</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a href="#" class="nav-link waves-effect waves-light">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link waves-effect waves-light">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link waves-effect waves-light">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>

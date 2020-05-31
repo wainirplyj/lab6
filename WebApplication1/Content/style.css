@@ -1,0 +1,16 @@
+html,body,header,#intro,#gallery{
+	height: 100%;
+}
+#intro{
+	background: url(../img/tank.gif);
+	-webkit-background-size: cover;
+	background-size: cover;
+
+}
+#gallery{
+	background: url(../img/ba2.jpg);
+	-webkit-background-size: cover;
+	
+#text{
+	font-size: 100px;
+}

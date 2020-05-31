@@ -1,0 +1,42 @@
+﻿@using System.Web.Optimization
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>@ViewBag.Title - Admin Area</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/tankico.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Bootstrap core CSS -->
+    @Styles.Render("~/bundles/bootstrap/css")
+    <!-- Material Design Bootstrap -->
+    @Styles.Render("~/bundles/mdb/css")
+    <!-- Your custom styles (optional) -->
+    @Styles.Render("~/bundles/style/css")
+
+    @if (IsSectionDefined("Styles"))
+    {
+        @RenderSection("Styles", required: false)
+    }
+</head>
+<body>
+
+    @Html.Partial("_HeaderAd")
+
+
+    @RenderBody()
+
+    @Html.Partial("_ModalWindows")
+
+    @Scripts.Render("~/bundles/jquery/js")
+    <script type="module" src="~/Scripts/popper.min.js"></script>
+    @Scripts.Render("~/bundles/bootstrap/js")
+    @Scripts.Render("~/bundles/mdb/js")
+</body>
+</html>
